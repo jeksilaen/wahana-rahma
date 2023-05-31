@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form | Wahana Rahma</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16"
+      href="img/icons8-google-forms-ios-16-glyph-16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/" method="POST">
+        <p style="text-align: end; font-style: italic">PT. Wahana Rahma</p>
+
+        <h1>Pendataan Diri | OSM CV</h1>
+        <p>
+          Silahkan isi data diri anda untuk keperluan
+          <span style="font-weight: bold">CV OSM (Orion Ship Management)</span>.
+          Form ini terdiri dari 6 bagian yang wajib untuk anda isi.
+        </p>
+        <hr />
+
+        <h3>
+          Personal Particulars:
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+        <div class="bigDiv">
+          <div class="smallDiv">
+            <div class="item">
+              <p>Nama Lengkap</p>
+              <input type="text" name="engName" required />
+            </div>
+            <div class="item">
+              <p>Tanggal Lahir</p>
+              <input type="date" name="dob" required />
+            </div>
+            <div class="item">
+              <p>Tinggi Badan <span style="font-weight: bold">(cm)</span></p>
+              <input
+                type="number"
+                name="height"
+                required
+                placeholder="ex. 175"
+              />
+            </div>
+            <div class="item">
+              <p>Ukuran Baju</p>
+              <select name="overallSize" style="text-align: center" id="">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div class="item">
+              <p>Keluarga Terdekat</p>
+              <input
+                type="text"
+                name="nextOfKin"
+                placeholder="ex. Susi Susanti"
+              />
+            </div>
+            <div class="item">
+              <p>
+                Hubungan
+                <span style="font-weight: bold"
+                  ><br />(dengan keluarga terdekat)</span
+                >
+              </p>
+              <select name="relation" style="text-align: center" id="">
+                <option value="SPOUSE">PASANGAN</option>
+                <option value="PARENT">ORANG TUA</option>
+                <option value="CHILD">ANAK</option>
+              </select>
+            </div>
+            <div class="item">
+              <p>Alamat</p>
+              <textarea
+                name="engAddress"
+                class="addr"
+                rows="5"
+                required
+                placeholder="ex. JL. XXX, KEC. XXX, SULAWESI SELATAN. INDONESIA"
+              ></textarea>
+            </div>
+            <div class="item">
+              <p>No. Passport</p>
+              <input type="text" name="idNo" required placeholder="" />
+            </div>
+          </div>
+
+          <div class="smallDiv">
+            <div class="item">
+              <p>
+                Nama Lengkap <span style="font-weight: bold">(Chinese)</span>
+              </p>
+              <input type="text" name="chiName" />
+            </div>
+            <div class="item">
+              <p>Umur</p>
+              <input type="number" name="age" required />
+            </div>
+            <div class="item">
+              <p>Berat Badan <span style="font-weight: bold">(kg)</span></p>
+              <input
+                type="number"
+                name="weight"
+                required
+                placeholder="ex. 70"
+              />
+            </div>
+            <div class="item">
+              <p>Ukuran Sepatu</p>
+              <input type="number" name="safeShoeSize" placeholder="ex. 41" />
+            </div>
+            <div class="item">
+              <p>Alamat <span style="font-weight: bold">(Chinese)</span></p>
+              <textarea name="chiAddress" class="addr" rows="5"></textarea>
+            </div>
+            <div class="item">
+              <p>Kode Pos</p>
+              <input type="text" name="postCode" required />
+            </div>
+          </div>
+
+          <div class="smallDiv">
+            <div class="item">
+              <p>Posisi/Rank yang Diminati</p>
+              <input
+                type="text"
+                name="appliedRank"
+                required
+                placeholder="ex. 3rd OFFICER"
+              />
+            </div>
+            <div class="item">
+              <p>Tempat Lahir</p>
+              <input
+                type="text"
+                name="pob"
+                required
+                placeholder="ex. MAKASSAR"
+              />
+            </div>
+            <div class="item">
+              <p>BMI</p>
+              <input type="number" name="bmi" placeholder="ex. 26,0" />
+            </div>
+            <div class="item">
+              <p>Status Pernikahan</p>
+              <select name="maritalStatus" style="text-align: center" id="">
+                <option value="SINGLE">BELUM MENIKAH</option>
+                <option value="MARRIED">SUDAH MENIKAH</option>
+              </select>
+            </div>
+            <div class="item">
+              <p>Jumlah Anak</p>
+              <input type="number" name="noOfChild" />
+            </div>
+            <div class="item">
+              <p>No. Handphone</p>
+              <input
+                type="text"
+                name="mobile"
+                required
+                placeholder="ex. 62 812 3456 7890"
+              />
+            </div>
+            <div class="item">
+              <p>Kontak Darurat</p>
+              <input type="text" name="emergencyContact" />
+            </div>
+            <div class="item">
+              <p>Airport Asal</p>
+              <input
+                type="text"
+                name="hometownAirport"
+                required
+                placeholder="ex. UJUNG PANDANG - MAKASSAR"
+              />
+            </div>
+            <div class="item">
+              <p>Waktu Available</p>
+              <input type="text" name="availableTime" />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <h3>
+          Certificates:
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+
+        <table style="width: 100%; border-collapse: collapse; padding: 10px">
+          <tr>
+            <th></th>
+            <th>Grade</th>
+            <th>No. Dokumen</th>
+            <th>Tanggal pengeluaran</th>
+            <th>Tempat penerbitan</th>
+            <th>Tanggal expired</th>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">Passport</td>
+            <td style="text-align: center">
+              <input
+                style="width: 70%"
+                type="text"
+                name="gradePassport"
+                placeholder="ex. CLASS III"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noPassport"
+                placeholder="ex. F137764"
+              />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalPassport" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatPassport"
+                placeholder="ex. JAKARTA UTARA"
+              />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirPassport" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Seafarer's Passport
+            </td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeSeafarer" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noSeafarer" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalSeafarer" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatSeafarer" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirSeafarer" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">Seaman's Book</td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeSeaman" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noSeaman" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalSeaman" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatSeaman" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirSeaman" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              National C.O.C.
+            </td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeCOC" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noCOC" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalCOC" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatCOC" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirCOC" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">GMDSS</td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirGMDSS" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">US VISA</td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeUSVISA" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noUSVISA" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalUSVISA" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatUSVISA" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirUSVISA" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Medical Certificate for Seafarers
+            </td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeMedical" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noMedical" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalMedical" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatMedical" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirMedical" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">Yellow Fever</td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeYellow" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noYellow" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalYellow" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatYellow" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirYellow" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">Cholera</td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="text" name="gradeCholera" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noCholera" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalCholera" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatCholera" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirCholera" />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3>
+          STCW Certificates:
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+
+        <table style="width: 100%; border-collapse: collapse; padding: 10px">
+          <tr>
+            <th></th>
+            <th>No. Dokumen</th>
+            <th>Tanggal pengeluaran</th>
+            <th>Tempat penerbitan</th>
+            <th>Tanggal expired</th>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Familiarization and Basic Safety Training
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noFamiliarization" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalFamiliarization"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatFamiliarization"
+                placeholder="ex. Makassar"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirFamiliarization"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Proficiency in Survival Craft and Rescue Boats
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noProficiencySurvival"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalProficiencySurvival"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatProficiencySurvival"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirProficiencySurvival"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Advanced Fire-fighting Training
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noAdvancedFirefighting"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalAdvancedFirefighting"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatAdvancedFirefighting"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirAdvancedFirefighting"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Proficiency in Medical First Aid
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noProficiencyMedical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalProficiencyMedical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatProficiencyMedical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirProficiencyMedical"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Medical Care On Board
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noMedicalCare" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalMedicalCare" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatMedicalCare" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirMedicalCare"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Ship Security Officer
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noShipSecurity" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalShipSecurity"
+              />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatShipSecurity" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirShipSecurity"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Bridge Team Management
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noBridgeTeam" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalBridgeTeam" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatBridgeTeam" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirBridgeTeam" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Ship Handling Course
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noShipHandling" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalShipHandling"
+              />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatShipHandling" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirShipHandling"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Security Awareness Training
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noSecurityAwareness"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalSecurityAwareness"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatSecurityAwareness"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirSecurityAwareness"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Seafarers with Designated Security Duties
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noSeafarersDesignated"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalSeafarersDesignated"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatSeafarersDesignated"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirSeafarersDesignated"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              ECDIS - Generic
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noECDIS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalECDIS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatECDIS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirECDIS" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              ECDIS - Type Specific
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noECDISType" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAwalECDISType" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="tempatECDISType" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="date" name="tglAkhirECDISType" />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Advanced training for Oil Tanker Cargo Operations
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noAdvancedTrainingOil"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalAdvancedTrainingOil"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatAdvancedTrainingOil"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirAdvancedTrainingOil"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Advanced training for Chemical Tanker Cargo Operations
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="noAdvancedTrainingChemical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalAdvancedTrainingChemical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatAdvancedTrainingChemical"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirAdvancedTrainingChemical"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">
+              Basic Training for Oil and Chemical Tanker Cargo Operations
+            </td>
+            <td style="text-align: center">
+              <input style="width: 90%" type="text" name="noBasicTrainingOil" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAwalBasicTrainingOil"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="text"
+                name="tempatBasicTrainingOil"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%"
+                type="date"
+                name="tglAkhirBasicTrainingOil"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3>
+          Equivalent Endorsements:
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+
+        <table style="width: 100%; border-collapse: collapse; padding: 10px">
+          <tr>
+            <th></th>
+            <th>Grade</th>
+            <th></th>
+            <th>License</th>
+            <th></th>
+            <th></th>
+            <th>GMDSS</th>
+            <th></th>
+            <th></th>
+            <th>Other</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-left: 1px solid rgb(206, 206, 206);
+                padding-left: 5px;
+              "
+            >
+              No. Dokumen
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Terbit
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-right: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Expired
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              No. Dokumen
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Terbit
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-right: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Expired
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              No. Dokumen
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Terbit
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-top: 1px solid rgb(206, 206, 206);
+                border-right: 1px solid rgb(206, 206, 206);
+              "
+            >
+              Tanggal Expired
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-weight: bold;
+                padding-top: 20px;
+                padding-left: 50px;
+                padding-bottom: 20px;
+              "
+            >
+              Panama
+            </td>
+            <td style="text-align: center; padding-right: 10px">
+              <input
+                style="width: 70%"
+                type="text"
+                name="gradePanama"
+                placeholder="ex. II/2"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noPanamaLicense" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAwalPanamaLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirPanamaLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noPanamaGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 80%" type="date" name="tglAwalPanamaGMDSS" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirPanamaGMDSS"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noPanamaOther" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 80%" type="date" name="tglPanamaOther" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirPanamaOther"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-left: 50px">Hongkong</td>
+            <td style="text-align: center; padding-right: 10px">
+              <input style="width: 70%" type="text" name="gradeHongkong" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noHongkongLicense" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAwalHongkongLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirHongkongLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noHongkongGMDSS" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAwalHongkongGMDSS"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirHongkongGMDSS"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noHongkongOther" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 80%" type="date" name="tglHongkongOther" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirHongkongOther"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-weight: bold;
+                padding-left: 50px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+              "
+            >
+              Tuvalu
+            </td>
+            <td style="text-align: center; padding-right: 10px">
+              <input style="width: 70%" type="text" name="gradeTuvalu" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noTuvaluLicense" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAwalTuvaluLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                border-bottom: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirTuvaluLicense"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noTuvaluGMDSS" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="date" name="tglAwalTuvaluGMDSS" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirTuvaluGMDSS"
+              />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-left: 1px solid rgb(206, 206, 206);
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="text" name="noTuvaluOther" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-bottom: 1px solid rgb(206, 206, 206);
+              "
+            >
+              <input style="width: 80%" type="date" name="tglTuvaluOther" />
+            </td>
+            <td
+              style="
+                text-align: center;
+                border-right: 1px solid rgb(206, 206, 206);
+                border-bottom: 1px solid rgb(206, 206, 206);
+                padding-right: 10px;
+              "
+            >
+              <input
+                style="width: 80%"
+                type="date"
+                name="tglAkhirTuvaluOther"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3>
+          Qualifications:
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; padding: 10px">
+          <tr>
+            <th>Name of Institution</th>
+            <th>City + Country</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Qualification Obtained</th>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 70%"
+                type="text"
+                name="nameOfInstitution"
+                placeholder="ex. PIP MAKASSAR"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 70%"
+                type="text"
+                name="cityPlusCountry"
+                placeholder="ex. MAKASSAR, INDONESIA"
+              />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="date" name="qualificationFrom" />
+            </td>
+            <td style="text-align: center">
+              <input style="width: 70%" type="date" name="qualificationTo" />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 70%"
+                type="text"
+                name="qualificationObtained"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3>
+          Sea Service Records (dalam 5 Tahun terakhir):
+          <span style="font-size: small; font-weight: 200; font-style: italic"
+            >Jika ada input yang tidak bisa di-isi, silahkan
+            <span style="font-weight: bold; text-decoration: underline"
+              >kosongkan atau isi dengan (-)</span
+            ></span
+          >
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; padding: 10px">
+          <tr>
+            <th>Company</th>
+            <th>Rank</th>
+            <th>Vessel</th>
+            <th>Type</th>
+            <th>Flag</th>
+            <th>GRT(TEU)/BHP</th>
+            <th>Engine Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>MO.s</th>
+            <th>Reason for S/off</th>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceCompany1"
+                placeholder="ex. PT. TOPAZ"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceRank1"
+                placeholder="ex. Deck Cadet"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceVessel1"
+                placeholder="ex. MT. Bull Flores"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceType1"
+                placeholder="ex. OIL TANKER"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceFlag1"
+                placeholder="ex. Indonesia"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceGRT1"
+                placeholder="ex. 23.235T/9000 HP"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceEngine1"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceFrom1"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceTo1"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceMOs1"
+                placeholder="ex. 12MM 17DD"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceReason1"
+                placeholder="ex. FC"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceCompany2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceRank2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceVessel2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceType2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceFlag2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceGRT2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceEngine2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceFrom2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceTo2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceMOs2"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceReason2"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceCompany3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceRank3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceVessel3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceType3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceFlag3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceGRT3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceEngine3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceFrom3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceTo3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceMOs3"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceReason3"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceCompany4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceRank4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceVessel4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceType4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceFlag4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceGRT4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceEngine4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceFrom4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceTo4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceMOs4"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceReason4"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceCompany5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceRank5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceVessel5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceType5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceFlag5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceGRT5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceEngine5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceFrom5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="date"
+                name="seaServiceTo5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceMOs5"
+              />
+            </td>
+            <td style="text-align: center">
+              <input
+                style="width: 90%; font-size: 12px"
+                type="text"
+                name="seaServiceReason5"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <div class="btn-block">
+          <button type="submit" href="/">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
