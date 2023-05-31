@@ -1,7 +1,11 @@
+require("dotenv").config();
+
 const express = require("express");
 const reader = require("xlsx");
 const ExcelJS = require("exceljs");
 const router = express.Router();
+const nodemailer = require("nodemailer");
+const fs = require("fs");
 
 router.get("/", (req, res) => {
   res.sendFile("index.html", { root: "./" });
@@ -491,11 +495,46 @@ router.post("/", async (req, res) => {
 
   const outputPath = filePath.replace(".xlsx", "_modified.xlsx");
   await workbook.xlsx.writeFile(outputPath);
+  await sendEmailWithAttachment();
 
   console.log("Changes saved to:", outputPath);
   res.status(200).json(req.body);
 });
 
-router.get("/change", async (req, res) => {});
+async function sendEmailWithAttachment() {
+  // Read the XLSX file as a buffer
+  const file = fs.readFileSync(__dirname + "/template_modified.xlsx");
+
+  // Create a Nodemailer transporter
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "ippo7707@gmail.com",
+      pass: process.env.PASS,
+    },
+  });
+
+  // Define email options
+  const mailOptions = {
+    from: "ippo7707@gmail.com",
+    to: "zacksilaen21@gmail.com",
+    subject: "OSM CV Submission",
+    text: "Please find the attached XLSX file.",
+    attachments: [
+      {
+        filename: "osmcrew.xlsx",
+        content: file,
+      },
+    ],
+  };
+
+  // Send the email
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent:", info.response);
+  } catch (error) {
+    console.error("Error occurred while sending email:", error);
+  }
+}
 
 module.exports = router;
