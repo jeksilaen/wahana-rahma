@@ -11,10 +11,6 @@ router.get("/", (req, res) => {
   res.sendFile("index.html", { root: "./" });
 });
 
-router.get("/sucess", (req, res) => {
-  res.sendFile("sucess.html", { root: "./" });
-});
-
 router.post("/", async (req, res) => {
   const {
     engName,
